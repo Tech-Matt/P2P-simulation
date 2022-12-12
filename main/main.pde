@@ -1,5 +1,6 @@
-final int RADIUS = 10;
+final int RADIUS = 20;
 final int NUM_PEERS = 10;
+final int MIN_DIST = 5;
 final int WIDTH = 640;
 final int HEIGHT = 360;
 
@@ -15,8 +16,8 @@ void setup()
   for (int i = 0; i < NUM_PEERS; i++)
   {
       //Randomly generated coordinates
-      rand_x = random(WIDTH);
-      rand_y = random(HEIGHT);
+      rand_x = random(RADIUS, WIDTH - RADIUS);
+      rand_y = random(RADIUS, HEIGHT - RADIUS);
       
       //Creating new peer
       Peer p = new Peer(rand_x, rand_y, RADIUS);

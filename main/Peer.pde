@@ -21,6 +21,11 @@ class Peer {
   
   void draw_peer()
   {
-    circle(xPos, yPos, radius);
+    circle(this.xPos, this.yPos, this.radius);
+  }
+  
+  float check_distance(Peer p)
+  {
+    return sqrt(sq(p.xPos) + sq(p.yPos));
   }
 }
