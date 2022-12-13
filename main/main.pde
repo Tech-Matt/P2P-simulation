@@ -3,6 +3,7 @@ final int NUM_PEERS = 10;
 final int MIN_DIST = 5;
 final int WIDTH = 640;
 final int HEIGHT = 360;
+final float SPAWN_RATE = 0.30; //temporary, i still have to understand how to use it
 
 Peer[] peers = new Peer[NUM_PEERS];
 
@@ -31,5 +32,7 @@ void setup()
 
 void draw()
 {
+  //Peers spawning and dying
+  
   
 }
